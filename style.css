@@ -1,0 +1,179 @@
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Lato", sans-serif;
+    }
+
+    .navbar {
+      background-color: #04f;
+    }
+
+    .navbar div {
+      display: none;
+    }
+
+    .navbar .toggle,
+    .navbar .brand {
+      display: inline-block;
+    }
+
+    .navbar .link {
+      display: block;
+      text-align: center;
+      padding: 1.5em;
+      text-decoration: none;
+      background: #04f;
+      color: white;
+      font-weight: 300;
+    }
+
+    .navbar .link:hover,
+    .navbar .link:active {
+      color: #04f;
+      background: white;
+    }
+
+    .navbar .brand {
+      width: 10em;
+      text-align: center;
+      padding: 1.5em;
+      color: white;
+      /* green #43cea2; */
+    }
+
+    .navbar a {
+      text-decoration: none;
+    }
+
+    .navbar .toggle {
+      padding: 1em;
+      color: #04f;
+    }
+
+    .hero-wrapper {
+      background-color: #04f;
+      color: white;
+      height: 30em;
+      background-image: url();
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-wrapper .hero-container {
+      display: flex;
+      justify-content: space-around;
+      width: 100em;
+    }
+
+    .hero-wrapper .hero-heading {
+      margin-top: 6em;
+    }
+    .hero-wrapper .hero-heading h1 {
+      font-size: 4em;
+      font-weight: 900;
+    }
+    .hero-wrapper .hero-heading h2{
+      font-size: 2em;
+      font-weight: 100;
+      letter-spacing: 10px;
+      margin-top: -0.7em;
+    }
+    /* .hero-wrapper .hero-heading h3 {
+      font-size: 1.5em;
+      font-weight: 100;
+      letter-spacing: 3px;
+      margin-bottom: -1em;
+    } */
+    .hero-wrapper .hero-img {
+      flex-direction: flex-end;
+      height: 35em;
+      width: 35em;
+      margin-top: 3em;
+    }
+
+  .second-block-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .second-block-img-box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .second-block-img-box img {
+    width: 30%;
+  }
+
+  .second-block-img-box div {
+    font-size: 14px;
+    color: #999;
+  }
+
+  .second-block-heading  {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    color: #04f;
+  }
+
+  .second-block-list ul li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+
+
+
+    @media (min-width: 48em) {
+      .navbar {
+        display: flex;
+      }
+
+      .navbar div {
+        display: flex;
+      }
+
+      .navbar .left,
+      .navbar .right {
+        display: flex;
+        flex: 1;
+      }
+
+      .navbar .link {
+        width: auto;
+      }
+
+      .navbar .right {
+        justify-content: flex-end;
+      }
+
+      .navbar .toggle {
+        display: none;
+      }
+
+      .hero-wrapper {
+        display: flex;
+      }
+
+    }
+
+    @media (max-width: 48em) {
+      .navbar.active .toggle {
+        background-color:#04f;
+        color: white;
+      }
+
+      .navbar .brand {
+        text-align: left;
+      }
+
+      .navbar.active div {
+        display: block;
+      }
+
+      .navbar .link {
+        background-color: #04f;
+      }
+    }
